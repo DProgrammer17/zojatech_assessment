@@ -13,6 +13,14 @@ class AuthService with AuthApi{
   TextEditingController registerEmailController = TextEditingController();
   TextEditingController registerPasswordController = TextEditingController();
 
+  void disposeControllers(){
+    nameController.dispose();
+    phoneController.dispose();
+    addressController.dispose();
+    registerEmailController.dispose();
+    registerPasswordController.dispose();
+  }
+
   ///Validate Register Info
   void validateRegister(BuildContext context) {
     if (nameController.text.isNotEmpty &&
@@ -63,6 +71,7 @@ class AuthService with AuthApi{
     await registerApi(user);
 
     if(context.mounted){
+      disposeControllers();
       context.showToast(message: StringAsset.success);
 
       ///Navigate to Dashboard
@@ -73,6 +82,7 @@ class AuthService with AuthApi{
     await loginApi(user);
 
     if(context.mounted){
+      disposeControllers();
       context.showToast(message: StringAsset.success);
 
       ///Navigate to Dashboard
@@ -83,6 +93,7 @@ class AuthService with AuthApi{
     await Future.delayed(
       const Duration(seconds: 2),
       () {
+        disposeControllers();
         clear();
 
         ///Navigate to LoginPage

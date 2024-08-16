@@ -7,6 +7,11 @@ class UserService extends AuthService {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 
+  void disposeUserServiceControllers(){
+    emailController.dispose();
+    passwordController.dispose();
+  }
+
   void _performLogin(BuildContext context) =>
       validateLogin(
         context: context,
