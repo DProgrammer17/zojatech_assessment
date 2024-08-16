@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:zoja_tech_assessment/features/auth/auth_service.dart';
 
-class UserService with AuthService {
+class UserService extends AuthService {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
 

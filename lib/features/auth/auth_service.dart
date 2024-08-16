@@ -1,10 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:zoja_tech_assessment/core/networking/auth_api.dart';
 import 'package:zoja_tech_assessment/features/auth/user_model.dart';
 import 'package:zoja_tech_assessment/utils/assets/string_assets.dart';
 import 'package:zoja_tech_assessment/utils/extensions/context_extension.dart';
 
-mixin AuthService {
+class AuthService with AuthApi{
   User? userInfo;
   TextEditingController nameController = TextEditingController();
   TextEditingController phoneController = TextEditingController();
@@ -59,25 +60,23 @@ mixin AuthService {
       );
 
   void register(BuildContext context, User user) async {
-    await Future.delayed(
-      const Duration(seconds: 2),
-      () {
-        context.showToast(message: StringAsset.success);
+    await registerApi(user);
 
-        ///Navigate to Dashboard
-      },
-    );
+    if(context.mounted){
+      context.showToast(message: StringAsset.success);
+
+      ///Navigate to Dashboard
+    }
   }
 
   void login(BuildContext context, User user) async {
-    await Future.delayed(
-      const Duration(seconds: 2),
-      () {
-        context.showToast(message: StringAsset.success);
+    await loginApi(user);
 
-        ///Navigate to Dashboard
-      },
-    );
+    if(context.mounted){
+      context.showToast(message: StringAsset.success);
+
+      ///Navigate to Dashboard
+    }
   }
 
   void logOut() async {

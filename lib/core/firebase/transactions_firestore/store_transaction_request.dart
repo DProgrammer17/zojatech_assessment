@@ -13,10 +13,13 @@ class StoreTransactionRequest {
   CollectionReference transactions =
       FirebaseFirestore.instance.collection(StringAsset.transactions);
 
-  Future<void> addTransactions(BuildContext context, String userId) =>
+  Future<void> addTransactions(
+      {required BuildContext context,
+        required String userId,
+        required TransactionResponse transaction}) =>
       transactions
           .doc(userId)
-          .set(TransactionResponse().toJson())
+          .set(transaction.toJson())
           .then((value) => context.showToast(
               message: StringAsset.transactionUploadedSuccessfully))
           .catchError((error) => context.showToast(
