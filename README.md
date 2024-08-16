@@ -16,7 +16,8 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-##Please find attached branching strategy for project
+###Please find attached branching strategy for project
+
 1.Main Branches:
 -'main' or 'master': A production-ready branch with deployable code. Only tested and stable code is merged here.
 - 'develop': This branch is always used for integration. All developers merge their feature branches into develop. This will be the staging area for the next release.
