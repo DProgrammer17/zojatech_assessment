@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zoja_tech_assessment/core/networking/product_api.dart';
-import 'package:zoja_tech_assessment/product_service/product_request.dart';
-import 'package:zoja_tech_assessment/product_service/product_response.dart';
+import 'package:zoja_tech_assessment/features/product_service/product_request.dart';
+import 'package:zoja_tech_assessment/features/product_service/product_response.dart';
 import 'package:zoja_tech_assessment/utils/assets/string_assets.dart';
 import 'package:zoja_tech_assessment/utils/extensions/context_extension.dart';
 

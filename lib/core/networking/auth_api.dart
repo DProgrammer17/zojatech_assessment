@@ -1,4 +1,4 @@
-import 'package:zoja_tech_assessment/auth/user_model.dart';
+import 'package:zoja_tech_assessment/features/auth/user_model.dart';
 
 mixin AuthApi{
 

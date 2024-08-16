@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:zoja_tech_assessment/transaction_service/models/transaction_list_response.dart';
-import 'package:zoja_tech_assessment/transaction_service/models/transaction_response.dart';
+import 'package:zoja_tech_assessment/features/transaction_service/models/transaction_list_response.dart';
+import 'package:zoja_tech_assessment/features/transaction_service/models/transaction_response.dart';
 import 'package:zoja_tech_assessment/utils/assets/string_assets.dart';
 import 'package:zoja_tech_assessment/utils/extensions/context_extension.dart';
 

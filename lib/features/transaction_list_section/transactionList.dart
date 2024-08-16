@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:zoja_tech_assessment/transaction_list_section/transaction_model.dart';
-import 'package:zoja_tech_assessment/transaction_list_section/transaction_vm.dart';
+import 'package:zoja_tech_assessment/features/transaction_list_section/transaction_model.dart';
+import 'package:zoja_tech_assessment/features/transaction_list_section/transaction_vm.dart';
 
 class TransactionScreen extends StatelessWidget {
   const TransactionScreen({super.key});

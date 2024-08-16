@@ -1,4 +1,4 @@
-import 'package:zoja_tech_assessment/transaction_service/models/transaction_response.dart';
+import 'package:zoja_tech_assessment/features/transaction_service/models/transaction_response.dart';
 
 class TransactionListResponse{
   String responseCode;

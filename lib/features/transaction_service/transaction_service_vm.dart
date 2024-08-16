@@ -1,12 +1,12 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:zoja_tech_assessment/auth/user_model.dart';
+import 'package:zoja_tech_assessment/features/auth/user_model.dart';
 import 'package:zoja_tech_assessment/core/networking/transaction_api.dart';
-import 'package:zoja_tech_assessment/transaction_service/models/dispute_transaction_request.dart';
-import 'package:zoja_tech_assessment/transaction_service/models/transaction_list_response.dart';
-import 'package:zoja_tech_assessment/transaction_service/models/transaction_response.dart';
-import 'package:zoja_tech_assessment/transaction_service/models/transfer_request.dart';
+import 'package:zoja_tech_assessment/features/transaction_service/models/dispute_transaction_request.dart';
+import 'package:zoja_tech_assessment/features/transaction_service/models/transaction_list_response.dart';
+import 'package:zoja_tech_assessment/features/transaction_service/models/transaction_response.dart';
+import 'package:zoja_tech_assessment/features/transaction_service/models/transfer_request.dart';
 import 'package:zoja_tech_assessment/utils/assets/string_assets.dart';
 import 'package:zoja_tech_assessment/utils/extensions/context_extension.dart';
 import 'package:zoja_tech_assessment/utils/utility_functions/geolocation_service.dart';

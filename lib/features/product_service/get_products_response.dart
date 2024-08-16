@@ -1,4 +1,4 @@
-import 'package:zoja_tech_assessment/product_service/product_response.dart';
+import 'package:zoja_tech_assessment/features/product_service/product_response.dart';
 
 class GetProductsResponse {
   List<ProductResponse>? products;

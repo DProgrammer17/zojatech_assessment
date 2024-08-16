@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:zoja_tech_assessment/auth/user_model.dart';
+import 'package:zoja_tech_assessment/features/auth/user_model.dart';
 import 'package:zoja_tech_assessment/utils/assets/string_assets.dart';
 import 'package:zoja_tech_assessment/utils/extensions/context_extension.dart';
 

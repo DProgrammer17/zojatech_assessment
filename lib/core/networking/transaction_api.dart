@@ -1,5 +1,5 @@
-import 'package:zoja_tech_assessment/transaction_service/models/dispute_transaction_request.dart';
-import 'package:zoja_tech_assessment/transaction_service/models/transfer_request.dart';
+import 'package:zoja_tech_assessment/features/transaction_service/models/dispute_transaction_request.dart';
+import 'package:zoja_tech_assessment/features/transaction_service/models/transfer_request.dart';
 
 mixin TransactionApi{
 
